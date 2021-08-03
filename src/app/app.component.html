@@ -417,7 +417,10 @@
       <span>Build for Production</span>
     </button>
   </div>
-
+  <app-my-title></app-my-title>
+  <div class="slider-content">
+  <mat-slider min="0" max="100" step="1" value="0" thumbLabel tickInterval="1"></mat-slider>
+  </div>
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz</pre>
@@ -468,7 +471,6 @@
       </svg>
     </a>
   </div>
-
   <!-- Footer -->
   <footer>
       Love Angular?&nbsp;
